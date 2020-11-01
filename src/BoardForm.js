@@ -18,6 +18,7 @@ class BoardForm extends Component {
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
+          <input placeholder="images" name="images" onChange={this.handleChange}/>
           <input placeholder="title" name="brdtitle" onChange={this.handleChange}/>
           <input placeholder="name" name="brdwriter" onChange={this.handleChange}/>
           <button type="submit">Save</button>
